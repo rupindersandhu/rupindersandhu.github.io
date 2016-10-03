@@ -1,0 +1,57 @@
+
+.pricetab{
+    min-width: 200px;
+    min-height: 200px;
+  background: linear-gradient(#555, #444);
+  float:left;
+  margin-top:.2%;
+    position:relative;
+  box-shadow:1px 1px 5px rgba(0, 0, 0, .5);
+}
+
+.pricetab:hover
+{
+/*  background: linear-gradient( #F9B84A, #ff9547);*/
+    background: #2c3e50;
+  box-shadow:0 0  15px rgba(0, 0, 0, 1);
+/*  margin-top:0;*/
+    float:left;
+    position:relative;
+}
+
+
+#percent0, #svg0, #percent1, #svg1, #percent2, #svg2, #percent3, #svg3, #percent4, #svg4, #percent5, #svg5, #percent6, #svg6, #percent7, #svg7 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#percent0, #percent1, #percent2, #percent3, #percent4, #percent5, #percent6, #percent7 {
+  line-height: 20px;
+  height: 20px;
+  width 100%;
+  top: 90px;
+  font-size: 23px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.8
+}
+
+.skills
+{
+    color: #ffffff;
+}
+
+.table
+{
+    border: 1px solid #3b3b3b; 
+    font-size: 1.1em;
+    background: #3b3b3b;
+    
+    border-collapse:separate;
+    border-radius:10px;
+    -moz-border-radius:6px;
+}
+
