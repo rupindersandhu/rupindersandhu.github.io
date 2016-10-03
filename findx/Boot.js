@@ -59,6 +59,11 @@ FindX.Boot.prototype = {
      */
     create: function() {
        
+        if(localStorage.getItem('tempID') == null){
+          var userID = this.game.rnd.integerInRange(100000, 999999);
+            localStorage.setItem('tempID', userID);
+            console.log(userID);
+        }
                      
             for(var i = 0; i < 10; i++ ) {
                 localStorage.removeItem('topName' + i);
@@ -113,11 +118,6 @@ FindX.Boot.prototype = {
         
         // Starts Preloader state/ calls the main method of 'Preloader.js'
         this.state.start('Preloader');
-        
-        // Displays maximum height and width of device's display in 
-        //  the debug console.
-        console.log( window.innerHeight);
-        console.log( window.innerWidth)
         
     }
 }
